@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ff000000">
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:numStars="6"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Daily Reminder"
+        android:id="@+id/dailytxt"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/material_deep_teal_200"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="89dp"
+        android:layout_marginBottom="60dp"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="79dp"
+            android:text="Brush"
+            android:id="@+id/btnBrush"
+            android:layout_marginRight="30dp"
+            android:onClick="brushOnClick"
+            android:backgroundTint="@color/material_blue_grey_800" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="79dp"
+            android:text="Brush"
+            android:id="@+id/btnBrush2"
+            android:onClick="brush2OnClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="79dp"
+            android:text="Floss"
+            android:id="@+id/btnFloss"
+            android:layout_marginRight="30dp"
+            android:onClick="flossOnClick" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="79dp"
+            android:text="Vitamin"
+            android:id="@+id/btnVitamin"
+            android:onClick="vitaminOnClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout"
+        android:id="@+id/linearLayout2">
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="79dp"
+            android:text="Pill"
+            android:id="@+id/btnPill"
+            android:layout_marginRight="30dp"
+            android:onClick="pillOnClick" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="79dp"
+            android:text="Bed"
+            android:id="@+id/btnBed"
+            android:onClick="bedOnClick" />
+    </LinearLayout>
+
+</RelativeLayout>
